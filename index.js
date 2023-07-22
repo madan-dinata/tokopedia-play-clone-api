@@ -3,8 +3,11 @@ import cors from "cors"
 import morgan from "morgan"
 import "dotenv/config"
 
+import { db } from "./app/infrastructure/mongoDB.js"
+
 const app = express()
 const port = process.env.port
+db()
 
 app.use(morgan("dev"))
 app.use(express.json())
