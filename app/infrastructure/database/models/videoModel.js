@@ -14,6 +14,21 @@ const products = new Schema({
   },
 });
 
+const comments = new Schema(
+  {
+    _id: mongoose.Types.ObjectId,
+    username: {
+      type: String,
+    },
+    comment: {
+      type: String,
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
+
 const VideosSchema = new Schema({
   _id: mongoose.Types.ObjectId,
   urlThumbnail: {
@@ -23,6 +38,7 @@ const VideosSchema = new Schema({
     type: String,
   },
   products: [products],
+  comments: [comments],
 });
 
 const VideoModel = mongoose.model("videos", VideosSchema);
