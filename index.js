@@ -5,6 +5,7 @@ import "dotenv/config"
 
 import { db } from "./app/infrastructure/database/mongodb.js"
 import routerVideos from "./app/interfaces/routes/videoRoutes.js"
+import routerProducts from "./app/interfaces/routes/productRouter.js"
 
 const app = express()
 const port = process.env.port
@@ -17,6 +18,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
 app.use(api, routerVideos)
+app.use(api, routerProducts)
 
 app.get("/", (req, res) => {
     res.send({ message: "tokopedia play clone api" })
