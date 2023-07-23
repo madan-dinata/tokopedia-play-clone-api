@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { getProductByVideoId, } from "../controllers/productController.js";
+import { getProductsByVideoId, } from "../controllers/productController.js";
 const router = Router()
 
-router.get("/products/:videoId", getProductByVideoId)
+router.get("/products/:videoId", getProductsByVideoId)
 
 export default router
