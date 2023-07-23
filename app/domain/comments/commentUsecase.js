@@ -8,5 +8,5 @@ export const getCommentsByVideoId = async (videoId) => {
 }
 
 export const postCommentByVideoId = async (videoId, username, comment) => {
-    return commentRepository.postCommentByVideoId(videoId, username, comment)
+    return await commentRepository.postCommentByVideoId(videoId, username, comment)
 }
