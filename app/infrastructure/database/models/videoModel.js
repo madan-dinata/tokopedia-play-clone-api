@@ -1,13 +1,34 @@
 import mongoose from "mongoose";
 import { Schema } from "mongoose";
 
+const products = {
+  linkProduct: {
+    type: String,
+  },
+  title: {
+    type: String,
+  },
+  price: {
+    type: Number,
+  },
+};
+
 const VideosSchema = new Schema({
   urlThumbnail: {
-    type: String
+    type: String,
   },
   urlVideo: {
-    type: String
-  }
+    type: String,
+  },
+  products: products,
+});
+
+VideosSchema.set("toJSON", {
+  virtuals: true,
+  versionKey: false,
+  transform: function (doc, ret) {
+    delete ret._id;
+  },
 });
 
 const VideoModel = mongoose.model("videos", VideosSchema);
