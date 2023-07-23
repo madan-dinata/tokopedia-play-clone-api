@@ -1,0 +1,1 @@
+export const VideoEntity = (id, urlThumbnail, urlVideo) => ({ id, urlThumbnail, urlVideo });
