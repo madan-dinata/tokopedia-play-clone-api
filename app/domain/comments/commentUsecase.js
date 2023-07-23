@@ -3,7 +3,7 @@ import { CommentEntity } from "./commentEntity.js"
 
 export const getCommentsByVideoId = async (videoId) => {
     const comments = await commentRepository.getCommentsByVideoId(videoId)
-    if (!comments) throw new Error(`comments not found`);
+    if (!comments) throw new Error("comments not found");
     return comments[0].comments.map((comment) => CommentEntity(comment.username, comment.comment, comment.updatedAt) )
 }
 
