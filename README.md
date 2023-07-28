@@ -12,7 +12,7 @@ Play is a streaming platform that can be accessed through the Tokopedia applicat
 
 ### 1. Database Structure :
 
-```json
+```
 videos : {
             _id: ObjectId,
             urlThumbnail: string,
