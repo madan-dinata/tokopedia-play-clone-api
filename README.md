@@ -37,7 +37,7 @@ videos : {
           }
 ```
 
-_*Using nested collections because there's no good reason to separate them and not using joins in this case*_
+_*Using nested collections because there's no good reason to separate them in this case and not using joins in this case*_
 
 ## API Documentation
 
