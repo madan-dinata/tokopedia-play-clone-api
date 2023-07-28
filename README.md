@@ -4,37 +4,48 @@
 
 Play is a streaming platform that can be accessed through the Tokopedia application. Users can enjoy a variety of interesting videos about live shopping with special promos, cooking shows, creations, and sports which will be broadcast live or rebroadcast. Users can also buy directly the products that are shown on Tokopedia Play.
 
+## Table of contents
+
+* [Tech Stack](#tech-stack)
+* [Database Structure](#database-structure)
+* [API Documentation](#api-documentation)
+  * [Base URL](#base-url)
+  * [API Request and Response](#api-request-and-response)
+* [Run Locally](#run-locally)
+* [Feedback](#feedback)
+
 ## Tech Stack
 
 **Server:** Node, Express, Mongodb
 
 ## Database Structure
+Database have one collection 
 
-### 1. Database Structure :
-
+videos collection
+----
 ```
-videos : {
-            _id: ObjectId,
-            urlThumbnail: string,
-            urlVideo: string,
-            products: [
-              {
-                _id: ObjectId,
-                linkProduct: string,
-                title: string,
-                price: int
-              }
-            ],
-            comments: [
-              {
-                _id: ObjectId,
-                username: string,
-                comment: string,
-                createdAt: Date
-                updatedAt: Date
-              }
-            ]
-          }
+{
+  _id: ObjectId,
+  urlThumbnail: string,
+  urlVideo: string,
+  products: [
+    {
+      _id: ObjectId,
+      linkProduct: string,
+      title: string,
+      price: int
+    }
+  ],
+  comments: [
+    {
+      _id: ObjectId,
+      username: string,
+      comment: string,
+      createdAt: Date
+      updatedAt: Date
+    }
+  ]
+}
 ```
 
 _*Using nested collections because there's no good reason to separate them in this case and not using joins in this case*_
@@ -46,7 +57,7 @@ Base URL
 The base URL for all API endpoints is:
 
 ```
-http://api.exampel.com/api/v1
+http://localhost:{PORT}/api/v1
 ```
 
 ## API Request and Response
