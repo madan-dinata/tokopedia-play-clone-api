@@ -1,3 +1,5 @@
+# menambah title and description di model video, mengubah isi link video youtube dengan hanya id saja, menambah urlimage di model product
+
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # Tokopedia Play Clone Api
@@ -6,23 +8,24 @@ Play is a streaming platform that can be accessed through the Tokopedia applicat
 
 ## Table of contents
 
-* [Tech Stack](#tech-stack)
-* [Database Structure](#database-structure)
-* [API Documentation](#api-documentation)
-  * [Base URL](#base-url)
-  * [API Request and Response](#api-request-and-response)
-* [Run Locally](#run-locally)
-* [Feedback](#feedback)
+- [Tech Stack](#tech-stack)
+- [Database Structure](#database-structure)
+- [API Documentation](#api-documentation)
+  - [Base URL](#base-url)
+  - [API Request and Response](#api-request-and-response)
+- [Run Locally](#run-locally)
+- [Feedback](#feedback)
 
 ## Tech Stack
 
 **Server:** Node, Express, Mongodb
 
 ## Database Structure
-Database have one collection 
 
-videos collection
-----
+Database have one collection
+
+## videos collection
+
 ```
 {
   _id: ObjectId,
@@ -52,8 +55,8 @@ _*Using nested collections because there's no good reason to separate them in th
 
 ## API Documentation
 
-Base URL 
-----
+## Base URL
+
 The base URL for all API endpoints is:
 
 ```
@@ -62,9 +65,10 @@ http://localhost:{PORT}/api/v1
 
 ## API Request and Response
 
-Videos
-----
-* Video object
+## Videos
+
+- Video object
+
 ```
 {
   id: ObjectId()
@@ -72,78 +76,81 @@ Videos
   urlVideo: string
 }
 ```
-GET /videos
-----
-  Returns all video in the system.
-* **URL Params**  
-  None
-* **Data Params**  
-  None
-* **Headers**  
-  Content-Type: application/json  
-* **Success Response:**  
-    * **Code:** 200  
-    **Content:**  
-        ```
-        [
-            {<video_object>},
-            {<video_object>},
-            {<video_object>}
-        ]
-        ```
 
-GET /videos/:id
-----
-  Returns the specified video by id.
-* **URL Params**  
-  *Required:* `id=string`
-* **Data Params**  
+## GET /videos
+
+Returns all video in the system.
+
+- **URL Params**  
   None
-* **Headers**  
-  Content-Type: application/json 
-* **Success Response:** 
-    * **Code:** 200  
-      **Content:**  
-        ```
-        { <video_object> }
-        ``` 
-* **Error Response:**  
-    * **Code:** 400  
-      **Content:** 
-        ```
-        { "message" : "Id not found" }
-        ```
-        
-POST /videos
-----
-  Creates a new Video and returns the new object.
-* **URL Params**  
+- **Data Params**  
   None
-* **Data Params**  
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**
+  - **Code:** 200  
+     **Content:**  
+     `   [
+     {<video_object>},
+     {<video_object>},
+     {<video_object>}
+ ]`
+
+## GET /videos/:id
+
+Returns the specified video by id.
+
+- **URL Params**  
+  _Required:_ `id=string`
+- **Data Params**  
+  None
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**
+  - **Code:** 200  
+    **Content:**
+    ```
+    { <video_object> }
+    ```
+- **Error Response:**
+  - **Code:** 400  
+    **Content:**
+    ```
+    { "message" : "Id not found" }
+    ```
+
+## POST /videos
+
+Creates a new Video and returns the new object.
+
+- **URL Params**  
+  None
+- **Data Params**
   ```
   {
     urlThumbnail: string,
     urlVideo: string
   }
   ```
-* **Headers**  
-  Content-Type: application/json  
-* **Success Response:**  
-    * **Code:** 201  
-    **Content:**  
-        ```
-            { "message": "Successful create video" }
-        ```
-* **Error Response:**  
-    * **Code:** 400  
-      **Content:** 
-        ```
-        { "message" : "Url Thumbnail or Url Video not be empty" }
-        ```
-----
-Products
-----
-* Product object
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**
+  - **Code:** 201  
+     **Content:**  
+     `       { "message": "Successful create video" }`
+- **Error Response:**
+  - **Code:** 400  
+    **Content:**
+    ```
+    { "message" : "Url Thumbnail or Url Video not be empty" }
+    ```
+
+---
+
+## Products
+
+- Product object
+
 ```
 {
   id: ObjectId()
@@ -152,39 +159,42 @@ Products
   price: integer
 }
 ```
-GET /products/:videoId
-----
-  Returns all products by video id in the system.
-* **URL Params**  
-  *Required:* `videoId=string`
-* **Data Params**  
+
+## GET /products/:videoId
+
+Returns all products by video id in the system.
+
+- **URL Params**  
+  _Required:_ `videoId=string`
+- **Data Params**  
   None
-* **Headers**  
-  Content-Type: application/json  
-* **Success Response:** 
-    * **Code:** 200  
-      **Content:**  
-        ```
-        [
-            {<product_object>},
-            {<product_object>},
-            {<product_object>}
-        ]
-        ``` 
-* **Error Response:**  
-    * **Code:** 400  
-      **Content:** 
-        ```
-        { "message" : "Id not found" }
-        ```
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**
+  - **Code:** 200  
+    **Content:**
+    ```
+    [
+        {<product_object>},
+        {<product_object>},
+        {<product_object>}
+    ]
+    ```
+- **Error Response:**
+  - **Code:** 400  
+    **Content:**
+    ```
+    { "message" : "Id not found" }
+    ```
 
+## POST /products/:videoId
 
-POST /products/:videoId
-----
-  Creates a new Product by video id and returns the new object.
-* **URL Params**  
-  *Required:* `videoId=string`
-* **Data Params**  
+Creates a new Product by video id and returns the new object.
+
+- **URL Params**  
+  _Required:_ `videoId=string`
+- **Data Params**
+
 ```
   {
     linkProduct: string
@@ -192,31 +202,38 @@ POST /products/:videoId
     price: integer
   }
 ```
-* **Headers**  
-  Content-Type: application/json  
-* **Success Response:**  
-    * **Code:** 200  
-      **Content:**  
-      ```
-        { "message": "Successful Product" }
-      ``` 
-* **Error Response:**  
-    * **Code:** 400  
-      **Content:** 
-        ```
-        { "message" : "Id not found" }
-        ```
-        
-      OR
-      
-      **Content:** 
-        ```
-        { "message" : "Link Product or title or price not be empty" }
-        ```
-----
-Comments
-----
-* Comment object
+
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**
+  - **Code:** 200  
+    **Content:**
+    ```
+      { "message": "Successful Product" }
+    ```
+- **Error Response:**
+
+  - **Code:** 400  
+    **Content:**
+
+    ```
+    { "message" : "Id not found" }
+    ```
+
+    OR
+
+    **Content:**
+
+    ```
+    { "message" : "Link Product or title or price not be empty" }
+    ```
+
+---
+
+## Comments
+
+- Comment object
+
 ```
 {
   username: string
@@ -225,65 +242,73 @@ Comments
   updatedAt: Date()
 }
 ```
-GET /comments/:videoId
-----
-  Returns all comments by video id in the system.
-* **URL Params**  
-  *Required:* `videoId=string`
-* **Data Params**  
-  None
-* **Headers**  
-  Content-Type: application/json  
-* **Success Response:** 
-    * **Code:** 200  
-      **Content:**  
-        ```
-        [
-            {<comment_object>},
-            {<comment_object>},
-            {<comment_object>}
-        ]
-        ``` 
-* **Error Response:**  
-    * **Code:** 400  
-      **Content:** 
-        ```
-        { message : "Id not found" }
-        ```
 
-POST /comments/:videoId
-----
-  Creates a new Comment by video id and returns the new object.
-* **URL Params**  
-  *Required:* `videoId=string`
-* **Data Params**  
+## GET /comments/:videoId
+
+Returns all comments by video id in the system.
+
+- **URL Params**  
+  _Required:_ `videoId=string`
+- **Data Params**  
+  None
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**
+  - **Code:** 200  
+    **Content:**
+    ```
+    [
+        {<comment_object>},
+        {<comment_object>},
+        {<comment_object>}
+    ]
+    ```
+- **Error Response:**
+  - **Code:** 400  
+    **Content:**
+    ```
+    { message : "Id not found" }
+    ```
+
+## POST /comments/:videoId
+
+Creates a new Comment by video id and returns the new object.
+
+- **URL Params**  
+  _Required:_ `videoId=string`
+- **Data Params**
+
 ```
   {
     username: string
     comment: string
   }
 ```
-* **Headers**  
-  Content-Type: application/json  
-* **Success Response:**  
-    * **Code:** 200  
-      **Content:**  
-      ```
-        { "message": "Successful Comment" }
-      ``` 
-* **Error Response:**  
-    * **Code:** 400  
-      **Content:** 
-        ```
-        { "message" : "Id not found" }
-        ```
-        
-      OR
-      
-      **Content:** 
-        ```
-        { "message" : "username or comment not be empty" }
-        ```
+
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**
+  - **Code:** 200  
+    **Content:**
+    ```
+      { "message": "Successful Comment" }
+    ```
+- **Error Response:**
+
+  - **Code:** 400  
+    **Content:**
+
+    ```
+    { "message" : "Id not found" }
+    ```
+
+    OR
+
+    **Content:**
+
+    ```
+    { "message" : "username or comment not be empty" }
+    ```
 
 ## Run Locally
 

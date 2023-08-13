@@ -1,1 +1,1 @@
-export const ProductEntity = ( id, linkProduct, title, price) => ({ id, linkProduct, title, price });
+export const ProductEntity = (id, linkProduct, title, price, urlImage) => ({ id, linkProduct, title, price, urlImage })

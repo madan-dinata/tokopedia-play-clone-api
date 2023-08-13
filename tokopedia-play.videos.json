@@ -1,225 +1,77 @@
-[{
-  "_id": {
-    "$oid": "64bc1d4eb6dc4cc3deebf599"
+[
+  {
+    "_id": ObjectId(),
+    "title": "Gamis Baru Masukkkk",
+    "description": "Langsung di pilih pilih aja kakak",
+    "urlThumbnail": "https://i.ytimg.com/vi/0U8UZcbwTgQ/oar2.jpg?sqp=-o…IhCcAHAAQY=&rs=AOn4CLDVULaT54_UkWbY7wrLUsbVlzGtvw",
+    "urlVideo": "n6f1x_yhoy4",
+    "products": [
+      {
+        "linkProduct": "https://www.tokopedia.com/hijabafwa/baju-gamis-syari-wanita-terbaru-jasmine-maxi-dress-jumbo-murah-lilac-2bd13?extParam=ivf%3Dtrue&src=topads",
+        "title": "Gamis Wanita",
+        "price": 168000,
+        "urlImage": "https://i.ytimg.com/vi/0U8UZcbwTgQ/oar2.jpg?sqp=-o…IhCcAHAAQY=&rs=AOn4CLDVULaT54_UkWbY7wrLUsbVlzGtvw"
+      }
+    ]
   },
-  "urlThumbnail": "https://s0.bukalapak.com/img/59946366892/s-463-463/data.jpeg.webp",
-  "urlVideo": "https://www.youtube.com/watch?v=n6f1x_yhoy4",
-  "products": [
-    {
-      "_id": {
-        "$oid": "64bcafaeb6dc4cc3deebf5a0"
-      },
-      "linkProduct": "https://www.tokopedia.com/hijabafwa/baju-gamis-syari-wanita-terbaru-jasmine-maxi-dress-jumbo-murah-lilac-2bd13?extParam=ivf%3Dtrue&src=topads",
-      "title": "Gamis Wanita",
-      "price": 168000
-    }
-  ],
-  "comments": [
-    {
-      "_id": {
-        "$oid": "64bcc74bb6dc4cc3deebf5a8"
-      },
-      "username": "Bunga Dwitamala",
-      "comment": "Bagus banget bahannya",
-      "createdAt": {
-        "$date": "2023-07-23T06:23:07.896Z"
-      },
-      "updatedAt": {
-        "$date": "2023-07-23T06:23:07.896Z"
+  {
+    "_id": ObjectId(),
+    "title": "Berbagai Celana Jeans",
+    "description": "Langsung di pilih pilih aja",
+    "urlThumbnail": "https://i.ytimg.com/vi/2nn-opyKa9M/oar2.jpg?sqp=-o…IhCcAHAAQY=&rs=AOn4CLC9JSq2VYa-NVP1VMPNM9OzwxL1hg",
+    "urlVideo": "Vvh2Cgz2hnk",
+    "products": [
+      {
+        "linkProduct": "https://www.tokopedia.com/lscollection2/celana-jeans-panjang-pria-premium-biru-tua-27-28?extParam=ivf%3Dfalse&src=topads",
+        "title": "Celana Jeans",
+        "price": 350000,
+        "urlImage": "https://i.ytimg.com/vi/2nn-opyKa9M/oar2.jpg?sqp=-o…IhCcAHAAQY=&rs=AOn4CLC9JSq2VYa-NVP1VMPNM9OzwxL1hg"
       }
-    },
-    {
-      "_id": {
-        "$oid": "64bcc771b6dc4cc3deebf5a9"
-      },
-      "username": "Muhammad Ramadhan",
-      "comment": "Mantapp",
-      "createdAt": {
-        "$date": "2023-07-23T06:23:45.342Z"
-      },
-      "updatedAt": {
-        "$date": "2023-07-23T06:23:45.342Z"
-      }
-    }
-  ]
-},
-{
-  "_id": {
-    "$oid": "64bc1d4eb6dc4cc3deebf59a"
+    ]
   },
-  "urlThumbnail": "https://s0.bukalapak.com/img/58429241482/s-330-330/8cf9dbad6b3baa9e2c98e5a707715b45.jpg.webp",
-  "urlVideo": "https://www.youtube.com/watch?v=TcKALTzkvPU",
-  "products": [
-    {
-      "_id": {
-        "$oid": "64bcb228b6dc4cc3deebf5a2"
-      },
-      "linkProduct": "https://www.tokopedia.com/buffers-4/tas-selempang-pria-buffers-slayer-…",
-      "title": "Tas Samping Pria",
-      "price": 90000
-    }
-  ],
-  "comments": [
-    {
-      "_id": {
-        "$oid": "64bcc836b6dc4cc3deebf5aa"
-      },
-      "username": "Bunga Dwitamala",
-      "comment": "Tas nya keren",
-      "createdAt": {
-        "$date": "2023-07-23T06:27:02.039Z"
-      },
-      "updatedAt": {
-        "$date": "2023-07-23T06:27:02.039Z"
+  {
+    "_id": ObjectId(),
+    "title": "TAS SAMPING PRIA",
+    "description": "Langsung checkout aja",
+    "urlThumbnail": "https://i.ytimg.com/vi/v8_vouVbCOo/oar2.jpg?sqp=-o…IhCcAHAAQY=&rs=AOn4CLBysKh-ceKUBuwSvA7APK1v5pMgxw",
+    "urlVideo": "TcKALTzkvPU",
+    "products": [
+      {
+        "linkProduct": "https://www.tokopedia.com/buffers-4/tas-selempang-pria-buffers-slayer-…",
+        "title": "Tas Samping Pria",
+        "price": 90000,
+        "urlImage": "https://i.ytimg.com/vi/v8_vouVbCOo/oar2.jpg?sqp=-o…IhCcAHAAQY=&rs=AOn4CLBysKh-ceKUBuwSvA7APK1v5pMgxw"
       }
-    },
-    {
-      "_id": {
-        "$oid": "64bcc847b6dc4cc3deebf5ab"
-      },
-      "username": "Muhammad Ramadhan",
-      "comment": "Mantapp",
-      "createdAt": {
-        "$date": "2023-07-23T06:27:19.959Z"
-      },
-      "updatedAt": {
-        "$date": "2023-07-23T06:27:19.959Z"
-      }
-    }
-  ]
-},
-{
-  "_id": {
-    "$oid": "64bc1d4eb6dc4cc3deebf59b"
+    ]
   },
-  "urlThumbnail": "https://yamaha-motor.co.id/uploads/products/new_product_model_image/2022122614560411491G63557.png",
-  "urlVideo": "https://www.youtube.com/watch?v=hNAoZpJ7h6E&t=224s",
-  "products": [
-    {
-      "_id": {
-        "$oid": "64bcb2c5b6dc4cc3deebf5a3"
-      },
-      "linkProduct": "https://yamaha-motor.co.id/product/xsr-155/",
-      "title": "Yamaha XSR 155",
-      "price": 42680000
-    }
-  ],
-  "comments": [
-    {
-      "_id": {
-        "$oid": "64bcc895b6dc4cc3deebf5ac"
-      },
-      "username": "Bunga Dwitamala",
-      "comment": "Standing la lagi",
-      "createdAt": {
-        "$date": "2023-07-23T06:28:37.824Z"
-      },
-      "updatedAt": {
-        "$date": "2023-07-23T06:28:37.824Z"
+  {
+    "_id": ObjectId(),
+    "title": "MOTOR KEREN BANGET",
+    "description": "yuk yuk, ada diskon 20% harga untuk 10 orang pertama yang beli",
+    "urlThumbnail": "https://i.ytimg.com/vi/AJAwEPXtlRs/oar2.jpg",
+    "urlVideo": "Zdytt80RHo8",
+    "products": [
+      {
+        "linkProduct": "https://yamaha-motor.co.id/product/xsr-155/",
+        "title": "Yamaha XSR 155",
+        "price": 42680000,
+        "urlImage": "https://i.ytimg.com/vi/AJAwEPXtlRs/oar2.jpg"
       }
-    },
-    {
-      "_id": {
-        "$oid": "64bcc8acb6dc4cc3deebf5ad"
-      },
-      "username": "Muhammad Ramadhan",
-      "comment": "Barudak well",
-      "createdAt": {
-        "$date": "2023-07-23T06:29:00.393Z"
-      },
-      "updatedAt": {
-        "$date": "2023-07-23T06:29:00.393Z"
-      }
-    }
-  ]
-},
-{
-  "_id": {
-    "$oid": "64bc1d4eb6dc4cc3deebf59c"
+    ]
   },
-  "urlThumbnail": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//93/MTA-31654019/no_brands_celana_denim_selvedge_accent_red_line_original_13-5_oz_stretch_raw_indigo_jeans_pria_full01_itfstckt.jpg",
-  "urlVideo": "https://www.youtube.com/watch?v=Vvh2Cgz2hnk",
-  "products": [
-    {
-      "_id": {
-        "$oid": "64bcb34db6dc4cc3deebf5a4"
-      },
-      "linkProduct": "https://www.tokopedia.com/lscollection2/celana-jeans-panjang-pria-premium-biru-tua-27-28?extParam=ivf%3Dfalse&src=topads",
-      "title": "Celana Jeans",
-      "price": 350000
-    }
-  ],
-  "comments": [
-    {
-      "_id": {
-        "$oid": "64bcc91fb6dc4cc3deebf5af"
-      },
-      "username": "Muhammad Ramadhan",
-      "comment": "Mantapp",
-      "createdAt": {
-        "$date": "2023-07-23T06:30:55.013Z"
-      },
-      "updatedAt": {
-        "$date": "2023-07-23T06:30:55.013Z"
+  {
+    "_id": ObjectId(),
+    "title": "Kemeja Pria",
+    "description": "Langsung di pilih pilih aja kakak",
+    "urlThumbnail": "https://i.ytimg.com/vi/ZvPYjhYwhEY/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLDekdDvYsmpmNbcl0ItutCEUlzhWQ",
+    "urlVideo": "n7xHenrAW3s",
+    "products": [
+      {
+        "linkProduct": "https://www.tokopedia.com/tokopakaianjr/kemeja-lengan-pendek-original-motz-kemeja-pria-murah-kemeja-keren-hitam-m-c847?extParam=ivf%3Dfalse&src=topads",
+        "title": "Kemeja Pria",
+        "price": 230000,
+        "urlImage": "https://i.ytimg.com/vi/ZvPYjhYwhEY/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLDekdDvYsmpmNbcl0ItutCEUlzhWQ"
       }
-    },
-    {
-      "_id": {
-        "$oid": "64bcc94db6dc4cc3deebf5b0"
-      },
-      "username": "Bunga Dwitamala",
-      "comment": "Bagus banget bahannya",
-      "createdAt": {
-        "$date": "2023-07-23T06:31:41.815Z"
-      },
-      "updatedAt": {
-        "$date": "2023-07-23T06:31:41.815Z"
-      }
-    }
-  ]
-},
-{
-  "_id": {
-    "$oid": "64bc1d4eb6dc4cc3deebf59d"
-  },
-  "urlThumbnail": "https://images.tokopedia.net/img/cache/700/product-1/2020/1/23/3083242/3083242_9000a035-d296-432a-8403-32a75e331f34_720_720.jpg",
-  "urlVideo": "https://www.youtube.com/watch?v=n7xHenrAW3s",
-  "products": [
-    {
-      "_id": {
-        "$oid": "64bcb3b2b6dc4cc3deebf5a5"
-      },
-      "linkProduct": "https://www.tokopedia.com/tokopakaianjr/kemeja-lengan-pendek-original-motz-kemeja-pria-murah-kemeja-keren-hitam-m-c847?extParam=ivf%3Dfalse&src=topads",
-      "title": "Kemeja Pria",
-      "price": 230000
-    }
-  ],
-  "comments": [
-    {
-      "_id": {
-        "$oid": "64bcc992b6dc4cc3deebf5b1"
-      },
-      "username": "Bunga Dwitamala",
-      "comment": "Cocok untuk suami ku",
-      "createdAt": {
-        "$date": "2023-07-23T06:32:50.156Z"
-      },
-      "updatedAt": {
-        "$date": "2023-07-23T06:32:50.156Z"
-      }
-    },
-    {
-      "_id": {
-        "$oid": "64bcc9a9b6dc4cc3deebf5b2"
-      },
-      "username": "Muhammad Ramadhan",
-      "comment": "Bagus banget",
-      "createdAt": {
-        "$date": "2023-07-23T06:33:13.316Z"
-      },
-      "updatedAt": {
-        "$date": "2023-07-23T06:33:13.316Z"
-      }
-    }
-  ]
-}]
+    ]
+  }
+]

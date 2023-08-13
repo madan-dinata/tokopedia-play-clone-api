@@ -1,1 +1,1 @@
-export const CommentEntity = ( username, comment, createdAt, updatedAt) => ({ username, comment, createdAt, updatedAt });
+export const CommentEntity = (id, username, comment, createdAt, updatedAt) => ({ id, username, comment, createdAt, updatedAt })

@@ -1,8 +1,7 @@
-import mongoose from "mongoose";
-import { Schema } from "mongoose";
+import mongoose from "mongoose"
+import { Schema } from "mongoose"
 
 const products = new Schema({
-  _id: mongoose.Types.ObjectId,
   linkProduct: {
     type: String,
   },
@@ -12,25 +11,34 @@ const products = new Schema({
   price: {
     type: Number,
   },
-});
+  urlImage: {
+    type: String,
+  },
+})
 
 const comments = new Schema(
   {
-    _id: mongoose.Types.ObjectId,
-    username: {
-      type: String,
-    },
     comment: {
       type: String,
+    },
+    username: {
+      type: String,
+      ref: "users",
     },
   },
   {
     timestamps: true,
   }
-);
+)
 
 const VideosSchema = new Schema({
   _id: mongoose.Types.ObjectId,
+  title: {
+    type: String,
+  },
+  description: {
+    type: String,
+  },
   urlThumbnail: {
     type: String,
   },
@@ -39,8 +47,8 @@ const VideosSchema = new Schema({
   },
   products: [products],
   comments: [comments],
-});
+})
 
-const VideoModel = mongoose.model("videos", VideosSchema);
+const VideoModel = mongoose.model("videos", VideosSchema)
 
-export default VideoModel;
+export default VideoModel
