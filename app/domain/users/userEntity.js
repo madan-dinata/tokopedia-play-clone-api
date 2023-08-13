@@ -1,1 +1,6 @@
-export const UserEntity = (id, username, password) => ({ id, username, password })
+export const createUser = (id, username, password, urlImage) => ({
+  id,
+  username,
+  password,
+  urlImage,
+})

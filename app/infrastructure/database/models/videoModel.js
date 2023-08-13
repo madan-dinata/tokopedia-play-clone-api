@@ -22,7 +22,7 @@ const comments = new Schema(
       type: String,
     },
     username: {
-      type: String,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "users",
     },
   },
