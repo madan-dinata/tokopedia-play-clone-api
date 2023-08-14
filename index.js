@@ -13,7 +13,7 @@ import routerComments from "./app/interfaces/routes/commentRouter.js"
 import routerUsers from "./app/interfaces/routes/userRouter.js"
 
 const app = express()
-const port = process.env.port
+const port = process.env.PORT || 5050
 
 const httpServer = createServer(app)
 const io = new Server(httpServer, {
