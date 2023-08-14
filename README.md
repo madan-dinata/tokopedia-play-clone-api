@@ -7,6 +7,7 @@ Play is a streaming platform that can be accessed through the Tokopedia applicat
 ## Table of contents
 
 - [Tech Stack](#tech-stack)
+- [Bonus Features](#bonus-features)
 - [Database Structure](#database-structure)
 - [API Documentation](#api-documentation)
   - [Base URL](#base-url)
@@ -17,6 +18,12 @@ Play is a streaming platform that can be accessed through the Tokopedia applicat
 ## Tech Stack
 
 **Server:** Node, Express, Mongodb, socket io
+
+## Bonus Features
+
+- Search videos by title
+- Real time data for comment list
+- Get user profile picture and username on the top right corner of the page
 
 ## Database Structure
 
@@ -140,7 +147,7 @@ Returns the videos by search query.
 - **URL Params**  
   _Required:_ none
 - **Data Params**  
-  `Required: ?q=[value]`
+  `Required: ?q=[value:string]`
 - **Headers**  
   Content-Type: application/json
 - **Success Response:**
@@ -451,7 +458,7 @@ Login with user account
     { "message": "Invalid password" }
     ```
 
-## GET /me
+## GET /me - Bonus Feature
 
 Get current user login
 
