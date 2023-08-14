@@ -25,6 +25,7 @@ export const login = async (req, res) => {
 export const register = async (req, res) => {
   try {
     const { username, password } = req.body
+    if (!username || !password) return res.status(400).send({ message: "username or password can not be empty" })
     await UserUsecase.register(username, password)
     res.status(201).send({ message: "Account successfully created" })
   } catch (error) {

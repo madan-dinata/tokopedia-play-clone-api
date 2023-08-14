@@ -1,0 +1,353 @@
+[{
+  "_id": {
+    "$oid": "64d8b85a24f2c2008650ad56"
+  },
+  "title": "Gamis Baru Masukkkk",
+  "description": "Langsung di pilih pilih aja kakak",
+  "urlThumbnail": "https://i.ytimg.com/vi/0U8UZcbwTgQ/oar2.jpg?sqp=-o…IhCcAHAAQY=&rs=AOn4CLDVULaT54_UkWbY7wrLUsbVlzGtvw",
+  "urlVideo": "n6f1x_yhoy4",
+  "products": [
+    {
+      "linkProduct": "https://www.tokopedia.com/hijabafwa/baju-gamis-syari-wanita-terbaru-jasmine-maxi-dress-jumbo-murah-lilac-2bd13?extParam=ivf%3Dtrue&src=topads",
+      "title": "Gamis Wanita",
+      "price": 168000,
+      "urlImage": "https://i.ytimg.com/vi/0U8UZcbwTgQ/oar2.jpg?sqp=-o…IhCcAHAAQY=&rs=AOn4CLDVULaT54_UkWbY7wrLUsbVlzGtvw"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64d8b85a24f2c2008650ad57"
+  },
+  "title": "Berbagai Celana Jeans",
+  "description": "Langsung di pilih pilih aja",
+  "urlThumbnail": "https://i.ytimg.com/vi/2nn-opyKa9M/oar2.jpg?sqp=-o…IhCcAHAAQY=&rs=AOn4CLC9JSq2VYa-NVP1VMPNM9OzwxL1hg",
+  "urlVideo": "Vvh2Cgz2hnk",
+  "products": [
+    {
+      "linkProduct": "https://www.tokopedia.com/lscollection2/celana-jeans-panjang-pria-premium-biru-tua-27-28?extParam=ivf%3Dfalse&src=topads",
+      "title": "Celana Jeans",
+      "price": 350000,
+      "urlImage": "https://i.ytimg.com/vi/2nn-opyKa9M/oar2.jpg?sqp=-o…IhCcAHAAQY=&rs=AOn4CLC9JSq2VYa-NVP1VMPNM9OzwxL1hg"
+    }
+  ],
+  "comments": [
+    {
+      "comment": "kelass denim nya",
+      "username": "Madan",
+      "_id": {
+        "$oid": "64d9286ffd4308846715f446"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T19:01:03.162Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T19:01:03.162Z"
+      }
+    },
+    {
+      "comment": "asik kali",
+      "username": "Madan",
+      "_id": {
+        "$oid": "64d92872fd4308846715f44a"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T19:01:06.788Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T19:01:06.788Z"
+      }
+    },
+    {
+      "comment": "tes",
+      "username": "Madan",
+      "_id": {
+        "$oid": "64d92cbaac8c39f78b5c6e21"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T19:19:22.596Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T19:19:22.596Z"
+      }
+    },
+    {
+      "comment": "kelas dek",
+      "username": "Madan",
+      "_id": {
+        "$oid": "64d92cdeac8c39f78b5c6e39"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T19:19:58.315Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T19:19:58.315Z"
+      }
+    },
+    {
+      "comment": "Gasssss",
+      "username": "galih",
+      "_id": {
+        "$oid": "64d9367f05262cc13f8a2678"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T20:01:03.505Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T20:01:03.505Z"
+      }
+    },
+    {
+      "comment": "unch",
+      "username": "galih",
+      "_id": {
+        "$oid": "64d9369305262cc13f8a26a6"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T20:01:23.857Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T20:01:23.857Z"
+      }
+    },
+    {
+      "comment": "okeoke ",
+      "username": "cikal",
+      "_id": {
+        "$oid": "64d9c767d8572d5ddb8d15c6"
+      },
+      "createdAt": {
+        "$date": "2023-08-14T06:19:19.151Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-14T06:19:19.151Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64d8b85a24f2c2008650ad58"
+  },
+  "title": "TAS SAMPING PRIA",
+  "description": "Langsung checkout aja",
+  "urlThumbnail": "https://i.ytimg.com/vi/v8_vouVbCOo/oar2.jpg?sqp=-o…IhCcAHAAQY=&rs=AOn4CLBysKh-ceKUBuwSvA7APK1v5pMgxw",
+  "urlVideo": "TcKALTzkvPU",
+  "products": [
+    {
+      "linkProduct": "https://www.tokopedia.com/buffers-4/tas-selempang-pria-buffers-slayer-…",
+      "title": "Tas Samping Pria",
+      "price": 90000,
+      "urlImage": "https://i.ytimg.com/vi/v8_vouVbCOo/oar2.jpg?sqp=-o…IhCcAHAAQY=&rs=AOn4CLBysKh-ceKUBuwSvA7APK1v5pMgxw"
+    }
+  ],
+  "comments": [
+    {
+      "comment": "mantap",
+      "username": "galih",
+      "_id": {
+        "$oid": "64d93f9568feee160d6dc6ed"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T20:39:49.273Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T20:39:49.273Z"
+      }
+    },
+    {
+      "comment": "we galih, kok disini",
+      "username": "Madan",
+      "_id": {
+        "$oid": "64d940c2d6678055b34d9dd9"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T20:44:50.660Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T20:44:50.660Z"
+      }
+    },
+    {
+      "comment": "hahahaha",
+      "username": "Madan",
+      "_id": {
+        "$oid": "64d940c5d6678055b34d9dde"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T20:44:53.785Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T20:44:53.785Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64d8b85a24f2c2008650ad59"
+  },
+  "title": "MOTOR KEREN BANGET",
+  "description": "yuk yuk, ada diskon 20% harga untuk 10 orang pertama yang beli",
+  "urlThumbnail": "https://i.ytimg.com/vi/AJAwEPXtlRs/oar2.jpg",
+  "urlVideo": "Zdytt80RHo8",
+  "products": [
+    {
+      "linkProduct": "https://yamaha-motor.co.id/product/xsr-155/",
+      "title": "Yamaha XSR 155",
+      "price": 42680000,
+      "urlImage": "https://i.ytimg.com/vi/AJAwEPXtlRs/oar2.jpg"
+    }
+  ],
+  "comments": [
+    {
+      "comment": "kelassssss",
+      "username": "galih",
+      "_id": {
+        "$oid": "64d936b705262cc13f8a27b3"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T20:01:59.605Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T20:01:59.605Z"
+      }
+    },
+    {
+      "comment": "ngeri kali",
+      "username": "galih",
+      "_id": {
+        "$oid": "64d936bd05262cc13f8a27b7"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T20:02:05.350Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T20:02:05.350Z"
+      }
+    },
+    {
+      "comment": "kelasss",
+      "username": "galih",
+      "_id": {
+        "$oid": "64d93f3e68feee160d6dc639"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T20:38:22.088Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T20:38:22.088Z"
+      }
+    },
+    {
+      "comment": "barudak wellll",
+      "username": "galih",
+      "_id": {
+        "$oid": "64d93f4868feee160d6dc63f"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T20:38:32.798Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T20:38:32.798Z"
+      }
+    },
+    {
+      "comment": "kelas dek",
+      "username": "cikal",
+      "_id": {
+        "$oid": "64d9c76ed8572d5ddb8d1642"
+      },
+      "createdAt": {
+        "$date": "2023-08-14T06:19:26.862Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-14T06:19:26.862Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64d8b85a24f2c2008650ad5a"
+  },
+  "title": "Kemeja Pria",
+  "description": "Langsung di pilih pilih aja kakak",
+  "urlThumbnail": "https://i.ytimg.com/vi/ZvPYjhYwhEY/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLDekdDvYsmpmNbcl0ItutCEUlzhWQ",
+  "urlVideo": "n7xHenrAW3s",
+  "products": [
+    {
+      "linkProduct": "https://www.tokopedia.com/tokopakaianjr/kemeja-lengan-pendek-original-motz-kemeja-pria-murah-kemeja-keren-hitam-m-c847?extParam=ivf%3Dfalse&src=topads",
+      "title": "Kemeja Pria",
+      "price": 230000,
+      "urlImage": "https://i.ytimg.com/vi/ZvPYjhYwhEY/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLDekdDvYsmpmNbcl0ItutCEUlzhWQ"
+    }
+  ],
+  "comments": [
+    {
+      "comment": "tes",
+      "username": "Madan",
+      "_id": {
+        "$oid": "64d906d218d4fabe140c099b"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T16:37:38.044Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T16:37:38.044Z"
+      }
+    },
+    {
+      "comment": "oke, makasih",
+      "username": "Madan",
+      "_id": {
+        "$oid": "64d906d718d4fabe140c099f"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T16:37:43.116Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T16:37:43.116Z"
+      }
+    },
+    {
+      "comment": "mantap",
+      "username": "Madan",
+      "_id": {
+        "$oid": "64d906db18d4fabe140c09a4"
+      },
+      "createdAt": {
+        "$date": "2023-08-13T16:37:47.825Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-13T16:37:47.825Z"
+      }
+    },
+    {
+      "comment": "kelas",
+      "username": "api",
+      "_id": {
+        "$oid": "64d9c570d8572d5ddb8d134a"
+      },
+      "createdAt": {
+        "$date": "2023-08-14T06:10:56.173Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-14T06:10:56.173Z"
+      }
+    },
+    {
+      "comment": "mantapppp",
+      "username": "cikal",
+      "_id": {
+        "$oid": "64d9c758d8572d5ddb8d14a2"
+      },
+      "createdAt": {
+        "$date": "2023-08-14T06:19:04.511Z"
+      },
+      "updatedAt": {
+        "$date": "2023-08-14T06:19:04.511Z"
+      }
+    }
+  ]
+}]

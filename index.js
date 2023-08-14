@@ -18,7 +18,7 @@ const port = process.env.port
 const httpServer = createServer(app)
 const io = new Server(httpServer, {
   cors: {
-    origin: process.env.ALLOWED_ORIGIN,
+    origin: process.env.ALLOWED_ORIGIN.split(","),
   },
 })
 

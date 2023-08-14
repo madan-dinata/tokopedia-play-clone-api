@@ -1,5 +1,3 @@
-# menambah title and description di model video, mengubah isi link video youtube dengan hanya id saja, menambah urlimage di model product
-
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # Tokopedia Play Clone Api
@@ -18,7 +16,7 @@ Play is a streaming platform that can be accessed through the Tokopedia applicat
 
 ## Tech Stack
 
-**Server:** Node, Express, Mongodb
+**Server:** Node, Express, Mongodb, socket io
 
 ## Database Structure
 
@@ -42,7 +40,10 @@ Database have one collection
   comments: [
     {
       _id: ObjectId,
-      username: string,
+      username: {
+        type: String,
+        ref: "users",
+      },
       comment: string,
       createdAt: Date
       updatedAt: Date
@@ -51,7 +52,16 @@ Database have one collection
 }
 ```
 
-_*Using nested collections because there's no good reason to separate them in this case and not using joins in this case*_
+## user collection
+
+```
+{
+  _id: ObjectId,
+  username: String,
+  password: String,
+  urlImage: String
+}
+```
 
 ## API Documentation
 
@@ -72,6 +82,8 @@ http://localhost:{PORT}/api/v1
 ```
 {
   id: ObjectId()
+  title: string
+  description: string
   urlThumbnail: string
   urlVideo: string
 }
@@ -89,12 +101,14 @@ Returns all video in the system.
   Content-Type: application/json
 - **Success Response:**
   - **Code:** 200  
-     **Content:**  
-     `   [
-     {<video_object>},
-     {<video_object>},
-     {<video_object>}
- ]`
+     **Content:**
+    ```
+    [
+      {<video_object>},
+      {<video_object>},
+      {<video_object>}
+    ]
+    ```
 
 ## GET /videos/:id
 
@@ -117,6 +131,32 @@ Returns the specified video by id.
     **Content:**
     ```
     { "message" : "Id not found" }
+    ```
+
+## GET /videos/search - Bonus Feature
+
+Returns the videos by search query.
+
+- **URL Params**  
+  _Required:_ none
+- **Data Params**  
+  `Required: ?q=[value]`
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**
+
+  - **Code:** 200  
+    **Content:**
+
+    ```
+    [ { <video_object> } ]
+    ```
+
+- **Error Response:**
+  - **Code:** 500  
+    **Content:**
+    ```
+    { "message" : "Internal Server Error" }
     ```
 
 ## POST /videos
@@ -157,6 +197,7 @@ Creates a new Video and returns the new object.
   linkProduct: string
   title: string
   price: integer
+  urlImage: string
 }
 ```
 
@@ -236,6 +277,7 @@ Creates a new Product by video id and returns the new object.
 
 ```
 {
+  id: ObjectId()
   username: string
   comment: string
   createdAt: Date()
@@ -307,7 +349,133 @@ Creates a new Comment by video id and returns the new object.
     **Content:**
 
     ```
-    { "message" : "username or comment not be empty" }
+    { "message" : "comment not be empty" }
+    ```
+
+## Users
+
+- User object
+
+```
+{
+  _id: ObjectId
+  username: String
+  password: String
+  urlImage: String
+}
+```
+
+## POST /register
+
+Create a new User
+
+- **URL Params**  
+  None
+- **Data Params**
+
+```
+  {
+    username: string
+    password: string
+  }
+```
+
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**
+
+  - **Code:** 200  
+    **Content:**
+    ```
+    { message: "Account successfully created"}
+    ```
+
+- **Error Response:**
+
+  - **Code:** 400  
+    **Content:**
+
+    ```
+    { message: "Username already exists" }
+    ```
+
+    OR
+
+  - **Code:** 400  
+    **Content:**
+    ```
+    { "message": "username or password can not be empty" }
+    ```
+
+## POST /login
+
+Login with user account
+
+- **URL Params**  
+  None
+- **Data Params**
+
+```
+  {
+    username: string
+    password: string
+  }
+```
+
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**
+
+  - **Code:** 200  
+    **Content:**
+    ```
+    { accessToken }
+    ```
+
+- **Error Response:**
+
+  - **Code:** 400  
+    **Content:**
+
+    ```
+    { message: "User not found" }
+    ```
+
+    OR
+
+  - **Code:** 400
+
+    **Content:**
+
+    ```
+    { "message": "Invalid password" }
+    ```
+
+## GET /me
+
+Get current user login
+
+- **URL Params**  
+  None
+- **Data Params**  
+  None
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**
+  - **Code:** 200  
+    **Content:**
+    ```
+    {
+      id: ObjectId,
+      username: String
+      urlImage: String
+    }
+    ```
+- **Error Response:**
+  - **Code:** 401
+    **Content:**
+    ```
+    { message : "No token provided!" }
     ```
 
 ## Run Locally
@@ -337,6 +505,8 @@ You will need to add the following environment variables to your .env file
 ```bash
   MONGO_URL=
   PORT=
+  SECRET_KEY=
+  ALLOWED_ORIGIN=
 ```
 
 Start the server

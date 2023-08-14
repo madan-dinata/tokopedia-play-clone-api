@@ -6,7 +6,7 @@ import * as UserEntity from "./userEntity.js"
 
 export const getMe = async (username) => {
   const user = await UserRepository.findByUsername(username)
-  return user
+  return UserEntity.UserEntity(user.id, user.username, user.urlImage)
 }
 
 export const login = async (username, password) => {
@@ -19,7 +19,7 @@ export const login = async (username, password) => {
       const accessToken = jwt.sign({ user: { id: user._id, username: user.username } }, process.env.SECRET_KEY, { expiresIn: "1d" })
       return accessToken
     } else {
-      throw new Error("Invalid username or password")
+      throw new Error("Invalid password")
     }
   } else {
     throw new Error("User not found")
