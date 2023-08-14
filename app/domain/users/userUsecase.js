@@ -4,6 +4,11 @@ import jwt from "jsonwebtoken"
 import * as UserRepository from "./userRepository.js"
 import * as UserEntity from "./userEntity.js"
 
+export const getMe = async (username) => {
+  const user = await UserRepository.findByUsername(username)
+  return user
+}
+
 export const login = async (username, password) => {
   const user = await UserRepository.findByUsername(username)
 

@@ -1,4 +1,5 @@
 import jwt from "jsonwebtoken"
+const { TokenExpiredError } = jwt
 
 export const catchError = (err, res) => {
   if (err instanceof TokenExpiredError) {

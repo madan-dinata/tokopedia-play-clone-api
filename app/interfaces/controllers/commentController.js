@@ -20,7 +20,7 @@ export const postCommentByVideoId = async (req, res) => {
     const { comment } = req.body
     if (!comment) return res.status(400).send({ message: "comment not be empty" })
     await commentUsecase.postCommentByVideoId(videoId, username, comment)
-    res.status(201).send()
+    res.status(201).send({ message: "Successful Comment" })
   } catch (error) {
     if (error.name === "CastError" && error.kind === "ObjectId") {
       return res.status(400).send({ message: "Id not found" })

@@ -1,6 +1,17 @@
 // userController.js
 import * as UserUsecase from "../../domain/users/userUsecase.js"
 
+export const getMe = async (req, res) => {
+  try {
+    const { username } = req
+    const user = await UserUsecase.getMe(username)
+    res.send(user)
+    return
+  } catch (error) {
+    res.status(500).send({ message: error.message })
+  }
+}
+
 export const login = async (req, res) => {
   try {
     const { username, password } = req.body
