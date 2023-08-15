@@ -18,7 +18,7 @@ export const postCommentByVideoId = async (req, res) => {
     const username = req.username
     const { videoId } = req.params
     const { comment } = req.body
-    if (!comment) return res.status(400).send({ message: "comment not be empty" })
+    if (!comment) return res.status(400).send({ message: "comment can not be empty" })
     await commentUsecase.postCommentByVideoId(videoId, username, comment)
     res.status(201).send({ message: "Successful Comment" })
   } catch (error) {
